@@ -7,6 +7,11 @@
     --background-buttons:#F5F4FA;
     --text-font-family: 'Roboto', sans-serif;
     --heading-font-family: 'Raleway', sans-serif;
+    --icon-color-background: #FFF;
+    --icon-color: #AFB1B8;
+    --icon-color-hover: #fff;
+    --icon-color-background-hover: #2196f3;
+    --brand-icon-color: #AFB1B8;
 }
 
 .global-footer{
@@ -136,6 +141,7 @@ ul {
     margin-top: 10px;
 }
 
+
 .list-tags-team span{
     color:var(--link-color);
     text-align: center;
@@ -255,8 +261,7 @@ ul {
 }
 
 .main-section{
-    background: url("/images/slide-background.jpg");
-    background-color:  rgba(0, 0, 0, 5);
+    background:url("/images/slide-background.jpg") rgba(0, 0, 0, 0.5);
 }
 .main-section .main-text{
     height: 600px;
@@ -313,6 +318,9 @@ ul {
     display: flex;
     gap: 30px;
     justify-content: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;  
 }
 
 .team-images .image-employ{
@@ -320,6 +328,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 270px;
     border-radius: 0px 0px 4px 4px;
     background: #FFF;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -330,7 +339,7 @@ ul {
     margin-bottom: 10px;
 }
 .team-images .image-employ em {
-    margin-bottom: 30px;
+   
 }
 
 .section-buttons{
@@ -375,4 +384,89 @@ ul {
 
 .card-grid .card-service em{
     margin-bottom: 20px;
+}
+
+.icon-list {
+    display: flex;
+    margin-top: 16px;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.icon-list .icon{
+    width: 44px;
+    height: 44px;
+    background-color: var(--icon-color-);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    color: var(--icon-color);
+}
+
+.icon-list .icon:hover,
+.icon-list .icon:focus
+{
+    color: var(--icon-color-hover);
+    background-color: var(--icon-color-background-hover);
+}
+
+.icon-list .icon svg{
+    weight: 20px;
+    height: 20px;
+}
+
+.brand-items{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 94px 0;
+}
+
+.brand-items h3{
+    color: #212121;
+    text-align: center;
+    font-family:var(--text-font-family);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+}
+
+.brand-items .brand-icons{
+    display: flex;
+    margin-top: 50px;
+    gap:30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brand-items .company-icon{
+    height: 92px;
+    width: 170px;
+    gap: 30px;
+    background-color: var(--heading-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid var(--brand-icon-color);
+    color: var(--brand-icon-color);
+}
+
+.brand-items .company-icon:hover,
+.brand-items .company-icon:focus {
+    color: var(--icon-color-background-hover);
+    border: 1px solid var(--icon-color-background-hover);
+}
+
+.brand-icons svg{
+    width: 106px;
+    height: 60px;
 }

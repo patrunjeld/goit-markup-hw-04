@@ -394,6 +394,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    margin-top: 50px;
 }
 
 .card-service{
@@ -401,17 +402,22 @@ ul {
     border-bottom: 1px solid #EEE;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
 }
 
 .card-grid .card-service span{
-    margin-top: 20px;
-    margin-bottom: 4px;
+    margin: 20px 24px 0 24px;
 
 }
 
 .card-grid .card-service em{
-    margin-bottom: 20px;
+    margin: 0px 24px 20px 24px;
+}
+
+.card-grid .card-service:hover,
+.card-grid .card-service:focus{
+    border: 1px solid #EEE;
+    background: #FFF;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .icon-list {

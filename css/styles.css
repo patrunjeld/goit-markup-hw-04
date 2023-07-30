@@ -12,12 +12,14 @@
     --icon-color-hover: #fff;
     --icon-color-background-hover: #2196f3;
     --brand-icon-color: #AFB1B8;
+    --footer-social-color: rgba(255, 255, 255, 0.10);
 }
 
 .global-footer{
     background-color:var(--backround);
     height: 251px;
     padding: 60px 0 60px 215px;
+    display: flex;
 }
 
 .global-footer .logo-bottom{
@@ -469,4 +471,50 @@ ul {
 .brand-icons svg{
     width: 106px;
     height: 60px;
+}
+
+.social-contact-tittle {
+    color: #FFF;
+    font-family: var(--text-font-family);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    margin-bottom: 20px;
+}
+
+.icons-footer {
+    display: flex;
+    gap: 10px;
+}
+
+.icons-footer .icon{
+    width: 44px;
+    height: 44px;
+    background-color:var(--footer-social-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    color: var(--heading-color);
+}
+
+.icons-footer .icon svg{
+    height: 20px;
+    width: 20px;
+}
+
+.social-icons-footer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 94px;
+    margin-top: 15px;
+
+}
+
+.icons-footer .icon:hover,
+.icons-footer .icon:focus{
+    background-color: var(--link-active-color);
+    color: var(--icon-color-background);
 }

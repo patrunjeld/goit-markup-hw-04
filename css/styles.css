@@ -313,7 +313,7 @@ ul {
 }
 
 .section{
-    padding: 94px 0;
+    margin-bottom: 94px;
     justify-content: center;
 }
 
@@ -331,7 +331,6 @@ ul {
 }
 
 .list-tags-team{
-    height: 648px;
     padding: 94px 0;
     background-color: var(--background-buttons);
 }

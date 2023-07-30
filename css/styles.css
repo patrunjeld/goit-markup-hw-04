@@ -13,6 +13,7 @@
     --icon-color-background-hover: #2196f3;
     --brand-icon-color: #AFB1B8;
     --footer-social-color: rgba(255, 255, 255, 0.10);
+    --tags-background-color:#F5F4FA;
 }
 
 .global-footer{
@@ -82,9 +83,13 @@ ul {
     line-height: normal;
     letter-spacing: 0.28px;
     text-decoration:none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
-.global-header .social-links:hover{
+.global-header .social-links:hover,
+.global-header .social-links:focus{
     color: var(--link-active-color);
 }
 
@@ -171,6 +176,27 @@ ul {
     gap:30px;
 }
 
+.list-tags li{
+    width: 270px;
+}
+
+.list-tags li .tags-icon{
+    width: 270px;
+    height: 120px;
+    background-color:var(--tags-background-color);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.list-tags .tags-icon svg{
+    width: 70px;
+    height: 70px;
+}
+
 .global-adress{
     margin-top: 28px;
     gap: 12px;
@@ -252,14 +278,14 @@ ul {
 .global-header .main-navigation ul{
     display: flex;
     justify-content: space-between;
-    margin: 0 385px 0 93px;
+    margin: 0 330px 0 93px;
     gap: 50px;
 }
 
 .contact-header{
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 40px;  
 }
 
 .main-section{

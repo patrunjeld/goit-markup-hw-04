@@ -254,8 +254,11 @@ ul {
     gap: 40px;
 }
 
+.main-section{
+    background: url("/images/slide-background.jpg");
+    background-color:  rgba(0, 0, 0, 5);
+}
 .main-section .main-text{
-    background-color: #212121;
     height: 600px;
     display: flex;
     flex-direction: column;
